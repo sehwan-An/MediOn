@@ -1,0 +1,29 @@
+# 환경 변수
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+frontend/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 로그
+*.log
+*.egg-info/
+
+# 업로드 파일 (로컬 개발용)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

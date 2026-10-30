@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* 디자인 토큰: 피그마 변수(MediON 컬렉션)와 같은 이름 (tech-spec 3. 디자인 토큰) */
+@theme {
+  --font-sans: "Noto Sans KR", sans-serif;
+
+  --color-primary: #0A62E0;        /* 환자 화면 주요 버튼 */
+  --color-primary-soft: #E7F0FF;
+  --color-doctor: #1B3A73;         /* 의사 화면 주요 버튼·헤더 */
+  --color-doctor-soft: #EAF0FA;
+  --color-ink: #0F1B2D;            /* 본문 */
+  --color-ink-muted: #5B6675;      /* 보조 텍스트 */
+  --color-line: #E3E8EF;           /* 구분선·테두리 */
+  --color-surface: #F4F6F9;        /* 페이지 배경 */
+  --color-wait: #6B3A00;           /* 대기·주의 상태 (예약됨 대기, 결제 대기, 입력 오류) */
+  --color-wait-soft: #FFF1E0;
+  --color-done: #0A4BAA;           /* 완료 상태 */
+  --color-done-soft: #E7F0FF;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    /* 한글이 단어 중간에서 줄바꿈되지 않게 */
+    word-break: keep-all;
+  }
+}
